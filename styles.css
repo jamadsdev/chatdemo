@@ -1,0 +1,186 @@
+/* Place your CSS styles in this file */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+      color: #14201b;
+      background: #ffffff;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      height: 76px;
+      background: #ffffff;
+      border-bottom: 1px solid #e3e8e5;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #0d3a2d;
+      text-decoration: none;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #14201b;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      color: #18614a;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: calc(100vh - 76px);
+      display: flex;
+      align-items: center;
+      padding: 80px 40px;
+      background-color: #0d3a2d;
+      background-image:
+        linear-gradient(90deg, rgba(13, 58, 45, 0.92) 0%, rgba(13, 58, 45, 0.6) 55%, rgba(13, 58, 45, 0.2) 100%),
+        url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=80");
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+    }
+
+    .hero-content {
+      max-width: 640px;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 6vw, 72px);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      line-height: 1.5;
+      max-width: 520px;
+      margin-bottom: 36px;
+      color: #dbe9e2;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 28px;
+      background: #ffffff;
+      color: #0d3a2d;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 2px;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      background: #a8dcc0;
+    }
+
+    @media (max-width: 760px) {
+      header {
+        flex-direction: column;
+        height: auto;
+        padding: 16px 20px;
+        gap: 12px;
+      }
+      nav ul { gap: 18px; flex-wrap: wrap; justify-content: center; }
+      .hero { padding: 60px 20px; min-height: 80vh; }
+      .hero p { font-size: 18px; }
+    }
+
+#divicw.wxcc-hidden {
+  visibility: hidden;
+}
+
+#divicw iframe {
+  bottom: 44px !important; /* clears the consent bar */
+  right: 24px !important;
+  z-index: 9000 !important; /* below your own modals (assumed 9500+) */
+}
+
+@media (max-width: 480px) {
+  #divicw iframe {
+    right: 12px !important;
+    bottom: 12px !important;
+    max-width: calc(100vw - 24px) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #divicw iframe {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* --- 1 & 5. Accessible, responsive fallback dialog --- */
+.wxcc-fallback {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: min(394px, calc(100vw - 32px));
+  box-sizing: border-box;
+  background: #fbfbfe;
+  color: #56627c;
+  font:
+    14px/1.45 "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+  padding: 1.25rem 2.5rem 1rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  z-index: 9001;
+}
+.wxcc-fallback[hidden] {
+  display: none;
+}
+.wxcc-fallback h2 {
+  margin: 0 0 0.5rem;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333a4d;
+}
+.wxcc-fallback p {
+  margin: 0 0 0.5rem;
+}
+.wxcc-fallback a {
+  color: #005cde;
+}
+.wxcc-fallback .wxcc-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: 0;
+  padding: 6px;
+  font-size: 18px;
+  line-height: 1;
+  color: #56627c;
+  cursor: pointer;
+}
+.wxcc-fallback .wxcc-close:focus-visible {
+  outline: 2px solid #005cde;
+  outline-offset: 2px;
+}
