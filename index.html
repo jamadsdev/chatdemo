@@ -1,0 +1,363 @@
+<!doctype html>
+
+<html>
+    <head>
+          <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halden Crest | Organizational Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+
+        <header>
+    <a href="#" class="logo">Halden Crest</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#">Capabilities</a></li>
+        <li><a href="#">Industries</a></li>
+        <li><a href="#">Insights</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Great strategy needs the right people behind it.</h1>
+        <p>We help organizations find, develop and reward the people who will carry them forward.</p>
+        <a href="#" class="btn">Talk to an advisor</a>
+      </div>
+    </section>
+  </main>
+
+        <!-- ========================= YOUR OWN LAUNCHER ========================= -->
+<!-- A real <button>: correct focus behaviour, accessible name, your analytics.
+     Stays disabled until the widget reports ready, so a click never no-ops. -->
+
+        <!-- Load external JavaScript -->
+        <!-- <script src="scripts.js"></script> -->
+
+        <!-- Chat Widget -->
+        <!-- <div id="divicw" data-bind="E3E6C318-0CF4-4D54-B219-FC2BABC46F8F" data-org="" data-guid="d3c9ed2a-ff0f-40b8-abc0-758ced138df6"></div><script>{3}var i={t:function(){try{var e=document.getElementById("divicw"),t=document.createElement("script");t.src="https://chat-widget.produs1.ciscoccservice.com/js/imichatinit.js?t="+new Date().toISOString(),e.insertAdjacentElement("afterend",t),t.addEventListener("load",function(){console.log(new Date().toISOString(),"Livechat script loaded successfully!")}),t.addEventListener("error",function(){console.log(new Date().toISOString(),"Error loading Livechat script");i.o(e)})}catch(e){console.error(e)}},o:function(e){e.insertAdjacentHTML("afterend",'<iframe id="tls_al_frm" frameborder="0" style="overflow:hidden;height:208px;width:394px;position:fixed;display:block;right:48px;bottom:12px;z-index:99999;display:none;"></iframe>');var t=document.getElementById("tls_al_frm"),n=t.contentWindow,d=n.document;d.open();d.write("<!doctype html><html><head><meta charset='utf-8'><title>Untitled Document</title><style>body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#99a0b0;font-size:14px}.popover__content{background-color:#fbfbfe;padding:1.5rem;border-radius:5px;width:300px;box-shadow:0 2px 5px 0 rgba(0,0,0,0.26);position:relative}.popover__message{font-weight:600;color:#56627c;font-size:16px}.pull-left{float:left}.clearfix{clear:both}.hdr-txt{width:218px;margin-top:3px}.para-txt a{text-decoration:none;color:#005cde}.close-btn{position:absolute;right:15px;top:15px}.close-btn a{text-decoration:none;font-weight:400;color:#56627c;font-size:16px}</style></head><body><div class='popover__content'><div class='close-btn'><a href='#' onclick='closeTLSAlert()'>X</a></div><div class='popover__message'><div class='pull-left hdr-txt'>This browser version is not supported on LiveChat.</div></div><div class='clearfix'></div><p class='para-txt'>Please update your browser to the latest version and re-open the website to access the widget.</p></div><script>function closeTLSAlert(){window.parent.postMessage({key:'close_tls_alert',value:'close_tls_alert',action:'close_tls_alert'},'*');}<\/script></body></html>");d.close();t.style.display='block';window.addEventListener('message',function(e){'close_tls_alert'===e.data.action&&i.s()})},s:function(){var e=document.getElementById('tls_al_frm');e&&e.remove()}};i.t();</script> -->
+        <style>
+  html:not(.webex-chat-ready) [data-open-chat] { display: none !important; }
+</style>
+
+<!-- 1. Site settings -->
+<script>
+  window.CHAT_CONFIG = {
+    // true: load chat only after your cookie banner calls webexChat.grantConsent().
+    // Keep false if you use the widget's built-in "Take consent from the customer" setting instead.
+    requireConsent: false,
+
+    // true: load chat once the page is idle (faster page loads; chat appears 1-2 s later).
+    loadWhenIdle: false,
+
+    // true: your site changes pages without full reloads (React, Vue, Angular routers).
+    singlePageApp: false,
+
+    // Pages where chat is hidden, unless the visitor already started a chat this session.
+    noChatPaths: [/^\/checkout\/payment/, /^\/account\/login/, /^\/account\/reset-password/],
+
+    // Shown only if the chat script can't load (ad blocker, proxy, network problem).
+    fallbackPhoneDisplay: "1-800-555-0100",
+    fallbackPhoneDial: "+18005550100",
+    fallbackContactUrl: "https://www.example.com/contact",
+
+    // Context shown to agents. Names must match custom chat fields in the admin console.
+    // Empty values are skipped. Never send card numbers, passwords, government IDs or health details.
+    getCustomFields: function () {
+      var user = window.siteUser || {}; // replace with however your site exposes the signed-in user
+      return {
+        "Customer ID": user.id,
+        "Account Tier": user.tier,
+        "Page Type": document.body.getAttribute("data-page-type") || "General"
+      };
+    }
+  };
+</script>
+
+<!-- 2. Cisco loader from the admin console, with an improved fallback popup.
+     Keep the global name `i`: Cisco's script may reference it. -->
+<div
+  id="divicw"
+  data-bind="57081D45-F7E7-4102-A057-92A6A187C70D"
+  data-org=""
+  data-guid="35dcf002-460d-47e2-a1c2-ff301cff0e7e"
+></div>
+<script>
+  var i = {
+    // Loads Cisco's widget script; shows the fallback popup if it fails to load.
+    t: function () {
+      try {
+        var e = document.getElementById("divicw"),
+          t = document.createElement("script");
+        t.src =
+          "https://chat-widget.produs1.ciscoccservice.com/js/imichatinit.js?t=" +
+          new Date().toISOString();
+        e.insertAdjacentElement("afterend", t);
+        t.addEventListener("error", function () {
+          i.o(e);
+        });
+      } catch (err) {
+        console.error(err);
+      }
+    },
+
+    // Fallback popup: says what to try, offers other ways to get help,
+    // fits small screens, and works with keyboards and screen readers.
+    o: function (e) {
+      var c = window.CHAT_CONFIG || {};
+      var esc = function (s) {
+        return String(s).replace(/[&<>"']/g, function (ch) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch];
+        });
+      };
+      var ways = [];
+      if (c.fallbackPhoneDisplay) {
+        ways.push(
+          "call <a href='tel:" + esc(c.fallbackPhoneDial || c.fallbackPhoneDisplay) +
+            "' target='_top'>" + esc(c.fallbackPhoneDisplay) + "</a>"
+        );
+      }
+      if (c.fallbackContactUrl) {
+        ways.push("visit <a href='" + esc(c.fallbackContactUrl) + "' target='_top'>our contact page</a>");
+      }
+      var alternatives = ways.length ? " Or " + ways.join(" or ") + "." : "";
+
+      e.insertAdjacentHTML(
+        "afterend",
+        '<iframe id="tls_al_frm" title="Chat unavailable" style="border:0;overflow:hidden;width:360px;' +
+          'max-width:calc(100vw - 24px);position:fixed;right:12px;bottom:12px;z-index:99999;display:none;"></iframe>'
+      );
+      var t = document.getElementById("tls_al_frm"),
+        d = t.contentWindow.document;
+      d.open();
+      d.write(
+        "<!doctype html><html lang='en'><head><meta charset='utf-8'><title>Chat unavailable</title><style>" +
+          "body{margin:0;padding:6px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;line-height:1.45;color:#3d4659}" +
+          ".box{position:relative;background:#fbfbfe;padding:1.25rem;border-radius:5px;box-shadow:0 2px 5px rgba(0,0,0,.26)}" +
+          "h2{margin:0 36px 8px 0;font-size:16px;color:#2b3346}p{margin:0}a{color:#005cde}" +
+          "button{position:absolute;top:8px;right:8px;padding:4px 10px;border:0;border-radius:4px;background:none;" +
+          "font-size:20px;line-height:1;cursor:pointer;color:#2b3346}" +
+          "button:focus-visible{outline:2px solid #005cde;outline-offset:2px}" +
+          "</style></head><body><div class='box' role='alert'>" +
+          "<h2>Chat isn't available right now</h2>" +
+          "<p>Check your connection or any content blockers, then refresh." + alternatives + "</p>" +
+          "<button type='button' aria-label='Close'>&times;</button>" +
+          "</div></body></html>"
+      );
+      d.close();
+      t.style.display = "block";
+      t.style.height = d.body.scrollHeight + "px";
+      d.querySelector("button").addEventListener("click", function () {
+        i.s();
+      });
+    },
+
+    // Removes the fallback popup.
+    s: function () {
+      var e = document.getElementById("tls_al_frm");
+      if (e) e.remove();
+    }
+  };
+</script>
+
+<!-- 3. Client-level customizations -->
+<script>
+  (function () {
+    var config = window.CHAT_CONFIG || {};
+    var CONSENT_KEY = "webexChatConsent";
+    var readyCallbacks = [];
+    var widget = null; // set when Cisco's widget reports ready
+    var loadRequested = false;
+    var hiddenByUs = false;
+    var openWhenReady = false;
+    var lastFieldsJson = "";
+
+    // ----- Run code once the widget is ready -----
+    function runSafely(fn) {
+      try {
+        fn(widget);
+      } catch (err) {
+        console.error("Chat customization failed:", err);
+      }
+    }
+
+    function onChatReady(fn) {
+      if (widget) runSafely(fn);
+      else readyCallbacks.push(fn);
+    }
+
+    // Cisco's script creates window.imichatwidget; check every 50 ms for up to 30 s.
+    function watchForWidget() {
+      var tries = 0;
+      (function check() {
+        var w = window.imichatwidget;
+        if (w && typeof w.on === "function") {
+          w.on("imichat-widget:ready", function () {
+            if (widget) return;
+            widget = w;
+            readyCallbacks.splice(0).forEach(runSafely);
+          });
+        } else if (tries++ < 600) {
+          setTimeout(check, 50);
+        }
+      })();
+    }
+
+    // ----- Loading: consent and idle timing -----
+    function loadChat() {
+      if (loadRequested) return;
+      loadRequested = true;
+      var start = function () {
+        i.t();
+        watchForWidget();
+      };
+      if (!config.loadWhenIdle) return start();
+      var startWhenIdle = function () {
+        if (window.requestIdleCallback) requestIdleCallback(start, { timeout: 3000 });
+        else setTimeout(start, 1500);
+      };
+      if (document.readyState === "complete") startWhenIdle();
+      else window.addEventListener("load", startWhenIdle);
+    }
+
+    function hasStoredConsent() {
+      try {
+        return localStorage.getItem(CONSENT_KEY) === "1";
+      } catch (e) {
+        return false;
+      }
+    }
+
+    function grantConsent() {
+      try {
+        localStorage.setItem(CONSENT_KEY, "1");
+      } catch (e) {}
+      loadChat();
+    }
+
+    // ----- Context for agents (custom chat fields) -----
+    function sendCustomFields(w) {
+      if (typeof config.getCustomFields !== "function") return;
+      var raw = config.getCustomFields() || {};
+      var fields = {};
+      var count = 0;
+      Object.keys(raw).forEach(function (name) {
+        var value = raw[name];
+        if (value !== undefined && value !== null && value !== "") {
+          fields[name] = String(value);
+          count++;
+        }
+      });
+      if (!count) return;
+      var json = JSON.stringify({ custom_chat_fields: fields });
+      if (json === lastFieldsJson) return;
+      // First send uses init; later changes use update. Both apply to chats started afterwards.
+      var send = lastFieldsJson && typeof w.update === "function" ? w.update : w.init;
+      lastFieldsJson = json;
+      send.call(w, json, function () {});
+    }
+
+    // ----- Hide chat on sensitive pages -----
+    function isNoChatPage() {
+      return (config.noChatPaths || []).some(function (pattern) {
+        return pattern.test(location.pathname);
+      });
+    }
+
+    function applyVisibility(w) {
+      if (isNoChatPage() && !w.hasInitiatedChat()) {
+        w.hide();
+        hiddenByUs = true;
+      } else if (hiddenByUs) {
+        // Only re-show what this code hid, so off-hours settings stay in control.
+        w.show();
+        hiddenByUs = false;
+      }
+    }
+
+    // ----- Launchers and ?chat=open links -----
+    function openChat() {
+      if (!widget) {
+        openWhenReady = true;
+        return;
+      }
+      widget.show();
+      hiddenByUs = false;
+      widget.maximizeWindow();
+    }
+
+    document.addEventListener("click", function (event) {
+      var target = event.target;
+      var launcher = target && target.closest ? target.closest("[data-open-chat]") : null;
+      if (!launcher) return;
+      event.preventDefault();
+      openChat();
+    });
+
+    function isDeepLinkOpen() {
+      try {
+        return new URLSearchParams(location.search).get("chat") === "open";
+      } catch (e) {
+        return false;
+      }
+    }
+
+    // ----- Single-page apps: re-check after client-side navigation -----
+    function refresh() {
+      onChatReady(function (w) {
+        applyVisibility(w);
+        sendCustomFields(w);
+      });
+    }
+
+    function watchRouteChanges() {
+      ["pushState", "replaceState"].forEach(function (method) {
+        var original = history[method];
+        history[method] = function () {
+          var result = original.apply(this, arguments);
+          setTimeout(refresh, 0);
+          return result;
+        };
+      });
+      window.addEventListener("popstate", function () {
+        setTimeout(refresh, 0);
+      });
+    }
+
+    // ----- Start -----
+    window.webexChat = {
+      grantConsent: grantConsent, // call from your cookie banner when requireConsent is true
+      open: openChat, // open chat from your own code
+      refresh: refresh // call from your router if page data updates after navigation
+    };
+
+    onChatReady(function (w) {
+      document.documentElement.classList.add("webex-chat-ready");
+      sendCustomFields(w);
+      applyVisibility(w);
+      if (openWhenReady || isDeepLinkOpen()) {
+        openWhenReady = false;
+        openChat();
+      }
+    });
+
+    if (config.singlePageApp) watchRouteChanges();
+    if (!config.requireConsent || hasStoredConsent()) loadChat();
+  })();
+</script>
+    </body>
+
+</html>
